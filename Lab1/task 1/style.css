@@ -1,0 +1,41 @@
+#navBar {
+    list-style-type: none;
+    display: flex;
+    background-color: #eee;
+    font-size: 22px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navItem {
+    padding: 8px;
+    flex-basis: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+.mainSec {
+    flex-basis: 50%;
+    border: 2px solid black;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foot {
+    background-color: #eee;
+}
+
+
+
+@media(max-width: 671px) {
+    #navBar {
+        flex-direction: column;
+    }
+    #container {
+        flex-direction: column; 
+    }
+}

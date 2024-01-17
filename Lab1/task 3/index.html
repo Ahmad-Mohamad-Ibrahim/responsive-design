@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-areas: 
+            "head head head head"
+            "nav main main sideB"
+            "nav main main sideB"
+            "nav main main sideB"
+            "nav main main sideB"
+            "nav main main sideB"
+            "foot foot foot foot";
+
+            height: 100vh;
+        }
+
+        .head {
+            grid-area: head;
+            background-color: rgb(3, 55, 100);
+        }
+        .nav {
+            grid-area: nav;
+            background-color: orangered;
+        }
+        .sideB {
+            grid-area: sideB;
+            background-color: orangered;
+        }
+
+        .foot {
+            grid-area: foot;
+            background-color: rgb(3, 55, 100);
+        }
+        .main {
+            grid-area: main;
+            background-color: green;
+        }
+
+        body > * {
+            padding: 8px;
+            color:white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        HEADER
+    </header>
+
+    <main class="main">MAIN CONTENT</main>
+
+    <aside class="nav">SIDENAV</aside>
+    <aside class="sideB">SIDEBAR</aside>
+
+    <footer class="foot">FOOTER</footer>
+
+</body>
+</html>
